@@ -35,3 +35,22 @@ C                             INF=1, ROUTINE SUCCEED.
 C
 C       The magnitude computation is stored locally in the `MAG`
 C       program variable.
+
+C ** DOT2 - Computes the dot product between a given vector V1, and V2.
+C
+C       A, B: A 2x1 column vector.
+C        
+C       PRD: The resulting scalar product.
+C       INF: The place in memory to store the state.
+C            POSSIBLE STATES: INF=0, ROUTINE FAIL
+C                             INF=1, ROUTINE SUCCEED.
+C 
+
+C ** AN2 - Computes the angle between two provided vectors.
+C
+C       A, B: A 2x1 column vector.
+C       PRD: The resulting angle
+C       INF: The place in memory to store the state.
+C            POSSIBLE STATES: INF=0, ROUTINE FAIL
+C                             INF=1, ROUTINE SUCCEED.
+C
