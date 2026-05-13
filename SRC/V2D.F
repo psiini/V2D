@@ -23,8 +23,9 @@ C
       IF ( V( 1 ) .EQ. 0 .AND. V( 2 ) .EQ. 0 ) THEN
         INF = 1
       ENDIF
-
-      ENDSUBROUTINE
+    
+      RETURN
+      END
 
 C ** MG2D - Computes the magnitude of a provided vector.
 C           This routine does NOT fail. Therefore INF stores
@@ -60,7 +61,7 @@ C       Check if we provided the zero vector.
         END IF
 
         RETURN
-      ENDSUBROUTINE
+      END
 
 
 
@@ -99,6 +100,8 @@ C     SUBROUTINE FAILURE. ZERO VECTOR.
         V2 ( 2 ) = V ( 2 ) / MAG
 
         INF = 1
-
+        
       ENDIF
-      ENDSUBROUTINE
+      
+      RETURN
+      END
